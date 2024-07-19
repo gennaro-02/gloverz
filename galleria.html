@@ -39,22 +39,22 @@
         <section class="raccolta-foto">
             <div class="container">
                 <ul class="filtri">
-                    <li>tutti</li>
-                    <li>throw-up</li>
-                    <li>bombing </li>
-                    <li>wild-style</li>
+                    <li class="item active" data-filtro="tutti" onclick="filtra('tutti')">tutti</li>
+                    <li class="item" data-filtro="throw-up" onclick="filtra('throw-up')">throw-up</li>
+                    <li class="item" data-filtro="bombing" onclick="filtra('bombing')">bombing </li>
+                    <li class="item" data-filtro="wild-style" onclick="filtra('wild-style')">wild-style</li>
                 </ul>
 
                 <div class="galleria">
-                    <div class="image"><img src="img/b-1.jpg" alt=""></div>
-                    <div class="image"><img src="img/b-2.jpeg" alt=""></div>
-                    <div class="image" ><img src="img/b-3.jpeg" alt=""></div>
-                    <div class="image"><img src="img/t-1.jpg" alt=""></div>
-                    <div class="image"><img src="img/t-2.jpeg" alt=""></div>
-                    <div class="image"><img src="img/t-3.jpg" alt=""></div>
-                    <div class="image"><img src="img/w-1.jpg" alt=""></div>
-                    <div class="image"><img src="img/w-2.jpg" alt=""></div>
-                    <div class="image"><img src="img/w-3.jpg" alt=""></div>
+                    <div class="image" data-image="bombing"><img class="modalTrigger" src="img/b-1.jpg" alt=""></div>
+                    <div class="image" data-image="bombing"><img class="modalTrigger" src="img/b-2.jpeg" alt=""></div>
+                    <div class="image" data-image="bombing"><img class="modalTrigger" src="img/b-3.jpeg" alt=""></div>
+                    <div class="image" data-image="throw-up"><img class="modalTrigger" src="img/t-1.jpg" alt=""></div>
+                    <div class="image" data-image="throw-up"><img class="modalTrigger" src="img/t-2.jpeg" alt=""></div>
+                    <div class="image" data-image="throw-up"><img class="modalTrigger" src="img/t-3.jpg" alt=""></div>
+                    <div class="image" data-image="wild-style"><img class="modalTrigger" src="img/w-1.jpg" alt=""></div>
+                    <div class="image" data-image="wild-style"><img class="modalTrigger" src="img/w-2.jpg" alt=""></div>
+                    <div class="image" data-image="wild-style"><img class="modalTrigger" src="img/w-3.jpg" alt=""></div>
 
                 </div>
             </div>
@@ -92,5 +92,13 @@
         </div>
 
     </footer>
-
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
+
+</html>

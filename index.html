@@ -20,14 +20,17 @@
                 <div class="logo">
                     <a href="/"><img src="img/logo.png" alt=""></a>
                 </div>
-                <nav>
+                <nav class="menu-nav">
                     <ul class="menu">
                         <li class="menu-item active"><a href="">Home</a></li>
-                        <li class="menu-item"><a href="">Storia dei graffiti</a></li>
-                        <li class="menu-item"><a href="./artisti.html">Artisti</a></li>
-                        <li class="menu-item"><a href="./galleria.html">Galleria</a></li>
+                        <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
+                        <li class="menu-item"><a href="artisti.html">Artisti</a></li>
+                        <li class="menu-item"><a href="galleria.html">Galleria</a></li>
                     </ul>
                 </nav>
+                <span class="hamburger" >
+                    <img src="img/uil_bars.png" onclick="openNav()" alt="">
+                </span>
             </div>
         </div>
 
@@ -67,10 +70,10 @@
                         <p> Nati negli anni '60 e '70, con l'era d'oro negli anni '80, i graffiti si sono diffusi
                             globalmente da New
                             York e Filadelfia, trovandosi oggi anche nelle gallerie d'arte.</p>
-                        <a class="button primary" href="#"> <span>scopri di più</span> <img src="img/Vector.png"
-                                alt=""></a>
+                        <a class="button primary" href="storia.html"> <span>scopri di più</span> <img
+                                src="img/home/Vector.png" alt=""></a>
                     </div>
-                    <div class="col"><img width="500" src="img/newyork.png" alt=""></div>
+                    <div class="col"><img width="500" src="img/home/newyork.png" alt=""></div>
                 </div>
             </div>
         </section>
@@ -79,15 +82,15 @@
             <div class="container">
                 <h1 class="t-artisti">artisti</h1>
                 <div class="volti">
-                    <div><img src="img/banksy.jpg" alt=""></div>
-                    <div><img src="img/dondi.jpg" alt=""></div>
-                    <div><img src="img/flycat.jpg" alt=""></div>
-                    <div><img src="img/jorit.jpg" alt=""></div>
-                    <div><img src="img/pichiavo.jpg" alt=""></div>
-                    <div><img src="img/wany.jpg" alt=""></div>
+                    <div><img src="img/home/banksy.jpg" alt=""></div>
+                    <div><img src="img/home/dondi.jpg" alt=""></div>
+                    <div><img src="img/home/flycat.jpg" alt=""></div>
+                    <div><img src="img/home/jorit.jpg" alt=""></div>
+                    <div><img src="img/home/pichiavo.jpg" alt=""></div>
+                    <div><img src="img/home/wany.jpg" alt=""></div>
                 </div>
                 <div class="button-center">
-                    <a class="button black" href="/artisti.html"> <span>artisti</span> <img src="img/Vector.png"
+                    <a class="button black" href="artisti.html"> <span>artisti</span> <img src="img/home/Vector.png"
                             alt=""></a>
                 </div>
             </div>
@@ -106,21 +109,21 @@
                         <p>Scoprite le opere d'arte urbana più significative, immergetevi nelle diverse tecniche
                             artistiche e seguite l'evoluzione del movimento graffiti in tutto il suo splendore visivo.
                         </p>
-                        <a class="button primary" href="./galleria.html"> <span>scopri di più</span> <img src="img/Vector.png"
-                                alt=""></a>
+                        <a class="button primary" href="galleria.html"> <span>scopri di più</span> <img
+                                src="img/home/Vector.png" alt=""></a>
                     </div>
-                    <div class="col"><img width="500" src="img/palazzo.png" alt=""></div>
+                    <div class="col"><img width="500" src="img/home/palazzo.png" alt=""></div>
                 </div>
             </div>
         </section>
 
-      
+
 
     </main>
     <footer>
-           
+
         <div class="row">
-        
+
             <div class="col">
                 <div class="logo">
                     <a href="/"><img src="img/logo.png" alt=""></a>
@@ -137,20 +140,34 @@
             <div class="col">
                 <h3>link utili</h3>
                 <ul>
-                    <li><a href="">PRIVACY POLICY</a></li>
-                    <li><a href="">COOKIE POLICY</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Cookie policy</a></li>
                 </ul>
 
             </div>
-       
-        </div> 
+
+        </div>
         <div class="row copyright">
             <p><small>© G-loverz 2024</small></p>
         </div>
-    
-</footer>
 
+    </footer>
+    <div id="mynav" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;
+        </a>
+<div class="overlay-content">
+        <nav class="nav-overlay">
+            <ul class="menu-overlay">
+                <li class="menu-item active"><a href="">Home</a></li>
+                <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
+                <li class="menu-item"><a href="artisti.html">Artisti</a></li>
+                <li class="menu-item"><a href="galleria.html">Galleria</a></li>
+            </ul>
+        </nav>
+    </div>
 
+    </div>
+ <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -26,6 +26,7 @@ body {
     font-size: 20px;
     line-height: 1.5;
     position: relative;
+
 }
 
 h1,
@@ -70,7 +71,9 @@ header {
     height: 50px;
 }
 
-.menu {
+
+
+.menu-nav .menu {
     list-style: none;
     display: flex;
     gap: 40px;
@@ -78,29 +81,33 @@ header {
 
 
 
-.menu-item a {
+.menu-nav .menu-item a {
     padding: 10px 15px;
     text-transform: uppercase;
     display: block;
 }
 
-.menu-item a:hover {
+.menu-nav .menu-item a:hover {
     color: #00D1FF;
     border-bottom: 1px solid #00D1FF;
 
 }
 
-.menu-item.active a {
+.menu-nav .menu-item.active a {
     color: #00D1FF;
     border-bottom: 1px solid #00D1FF;
 
+}
+
+.hamburger {
+    display: none;
 }
 
 .hero {
     min-height: 800px;
     background-color: #212121;
     padding-top: 100px;
-    background-image: url("../img/pezzonota.jpg");
+    background-image: url("../img/home/pezzonota.jpg");
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -178,7 +185,7 @@ header {
 #sezione-2::before {
     content: "";
     width: 100%;
-    background-image: url('../img/Group42.svg');
+    background-image: url('../img/home/Group42.svg');
     background-size: contain;
     position: absolute;
     height: 100px;
@@ -258,6 +265,7 @@ header {
 .volti {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .volti img {
@@ -318,7 +326,7 @@ footer .copyright p {
 /* inizio sessione artisti*/
 
 #paginaartisti .sezioneartisti {
-    min-height: 600px;
+    max-width: 100%;
     background-color: #212121;
     padding: 100px 50px;
     display: flex;
@@ -402,6 +410,7 @@ footer .copyright p {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 
 
@@ -413,11 +422,17 @@ footer .copyright p {
 
 .busto {
     position: absolute;
-    bottom: -4px;
-    width: 500px;
+    bottom: -10px;
+    max-width: 100%;
     left: 50%;
     margin-left: -200px;
 
+}
+
+.busto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .text-center {
@@ -431,10 +446,10 @@ footer .copyright p {
 }
 
 
-.bio{
+.bio {
     color: #fff;
     line-height: 1.5;
-    padding-bottom: 50px;  
+    padding-bottom: 50px;
 }
 
 .s-due {
@@ -479,8 +494,8 @@ footer .copyright p {
     line-height: 1.5;
 }
 
-.badge p{
-    padding: 0 
+.badge p {
+    padding: 0
 }
 
 
@@ -503,8 +518,9 @@ footer .copyright p {
     text-transform: uppercase;
     padding: 100px 0;
 
-    
+
 }
+
 .filtri {
     display: flex;
     gap: 80px;
@@ -512,12 +528,12 @@ footer .copyright p {
     align-items: center;
     padding-bottom: 100px;
 
-} 
+}
 
 .filtri li {
     background-color: #000000;
     padding: 12px 20px;
-  
+
 
 }
 
@@ -537,9 +553,9 @@ footer .copyright p {
 }
 
 .galleria img {
-height: 100%;
-width: 100%;
-object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .hide {
@@ -583,3 +599,67 @@ object-fit: cover;
 }
 
 
+.overlay {
+display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+}
+
+.overlay-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .menu-item a {
+    font-size: 36px;
+    padding: 20px 0;
+    display: block;
+}
+
+.overlay .menu-item a:hover {
+
+    color: #00D1FF;
+    border-bottom: 1px solid #00D1FF;
+
+
+}
+
+.overlay .menu-item.active a{
+    color: #00D1FF;
+    border-bottom: 1px solid #00D1FF;
+ 
+}
+
+.overlay .menu-overlay {
+    list-style: none;
+
+}
+
+.close-btn {
+    position: absolute;
+    font-size: 32px;
+    right: 30px;
+    top: 30px;
+
+}
+
+/* responsive */
+
+@media (max-width:768px) {
+    .menu-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

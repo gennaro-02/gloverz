@@ -18,17 +18,17 @@
         <div class="container">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="/"><img src="img/logo.png" alt=""></a>
+                    <a href="./"><img src="img/logo.png" alt=""></a>
                 </div>
                 <nav class="menu-nav">
                     <ul class="menu">
-                        <li class="menu-item active"><a href="">Home</a></li>
+                        <li class="menu-item active"><a href="./">Home</a></li>
                         <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
                         <li class="menu-item"><a href="artisti.html">Artisti</a></li>
                         <li class="menu-item"><a href="galleria.html">Galleria</a></li>
                     </ul>
                 </nav>
-                <span class="hamburger" >
+                <span class="hamburger">
                     <img src="img/uil_bars.png" onclick="openNav()" alt="">
                 </span>
             </div>
@@ -59,7 +59,7 @@
         <section id="sezione-2">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-50">
                         <h1 class="titolo2">STORIA DEI GRAFFITI</h1>
                         <p>I graffiti sono una forma d'arte urbana su superfici pubbliche, realizzata con bombolette
                             spray,
@@ -73,14 +73,14 @@
                         <a class="button primary" href="storia.html"> <span>scopri di più</span> <img
                                 src="img/home/Vector.png" alt=""></a>
                     </div>
-                    <div class="col"><img width="500" src="img/home/newyork.png" alt=""></div>
+                    <div class="col col-50"><img width="100%" src="img/home/newyork.png" alt=""></div>
                 </div>
             </div>
         </section>
 
         <section class="s-artisti">
             <div class="container">
-                <h1 class="t-artisti">artisti</h1>
+                <h2 class="t-artisti">artisti</h2>
                 <div class="volti">
                     <div><img src="img/home/banksy.jpg" alt=""></div>
                     <div><img src="img/home/dondi.jpg" alt=""></div>
@@ -101,7 +101,7 @@
         <section id="sezione-4">
             <div class="container">
                 <div class="row inverse">
-                    <div class="col">
+                    <div class="col col-50">
                         <h1 class="titolo2">galleria</h1>
                         <p>Scopri la nostra "Galleria", dove esploriamo il mondo dei graffiti attraverso una collezione
                             di foto suddivise per
@@ -112,7 +112,7 @@
                         <a class="button primary" href="galleria.html"> <span>scopri di più</span> <img
                                 src="img/home/Vector.png" alt=""></a>
                     </div>
-                    <div class="col"><img width="500" src="img/home/palazzo.png" alt=""></div>
+                    <div class="col col-50"><img width="100%" src="img/home/palazzo.png" alt=""></div>
                 </div>
             </div>
         </section>
@@ -124,22 +124,25 @@
 
         <div class="row">
 
-            <div class="col">
+            <div class="col col-33">
                 <div class="logo">
-                    <a href="/"><img src="img/logo.png" alt=""></a>
+                    <a href="./"><img src="img/logo.png" alt=""></a>
                 </div>
             </div>
-            <div class="col">
+            <div class=" col col-33">
                 <h3>social</h3>
-                <div class="social-icons">
-                    <a href="#">instagram</a>
-                    <a href="#">facebook</a>
-                    <a href="#">youtube</a>
-                </div>
+
+                <ul class="social-icons">
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li> <a href="#">youtube</a></li>
+                </ul>
+
+
             </div>
-            <div class="col">
+            <div class="col col-33">
                 <h3>link utili</h3>
-                <ul>
+                <ul class="link-utili">
                     <li><a href="">Privacy policy</a></li>
                     <li><a href="">Cookie policy</a></li>
                 </ul>
@@ -155,19 +158,21 @@
     <div id="mynav" class="overlay">
         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;
         </a>
-<div class="overlay-content">
-        <nav class="nav-overlay">
-            <ul class="menu-overlay">
-                <li class="menu-item active"><a href="">Home</a></li>
-                <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
-                <li class="menu-item"><a href="artisti.html">Artisti</a></li>
-                <li class="menu-item"><a href="galleria.html">Galleria</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="overlay-content">
+            <nav class="nav-overlay">
+                <ul class="menu-overlay">
+                    <li class="menu-item active"><a href="./">Home</a></li>
+                    <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
+                    <li class="menu-item"><a href="artisti.html">Artisti</a></li>
+                    <li class="menu-item"><a href="galleria.html">Galleria</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </div>
- <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

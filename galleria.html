@@ -18,16 +18,20 @@
         <div class="container">
             <div class="inner-header">
                 <div class="logo">
-                    <a href="/"><img src="img/logo.png" alt=""></a>
+                    <a href="./"><img src="img/logo.png" alt=""></a>
                 </div>
                 <nav class="menu-nav">
                     <ul class="menu">
-                        <li class="menu-item"><a href="/">Home</a></li>
-                        <li class="menu-item"><a href="">Storia dei graffiti</a></li>
+                        <li class="menu-item"><a href="./">Home</a></li>
+                        <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
                         <li class="menu-item"><a href="artisti.html">Artisti</a></li>
-                        <li class="menu-item active"><a href="">Galleria</a></li>
+                        <li class="menu-item active"><a href="galleria.html">Galleria</a></li>
                     </ul>
                 </nav>
+                <span class="hamburger" >
+                    <img src="img/uil_bars.png" onclick="openNav()" alt="">
+                </span>
+
             </div>
         </div>
 
@@ -64,24 +68,27 @@
 
         <div class="row">
 
-            <div class="col">
+            <div class="col col-33">
                 <div class="logo">
-                    <a href="/"><img src="img/logo.png" alt=""></a>
+                    <a href="./"><img src="img/logo.png" alt=""></a>
                 </div>
             </div>
-            <div class="col">
+            <div class=" col col-33">
                 <h3>social</h3>
-                <div class="social-icons">
-                    <a href="#">instagram</a>
-                    <a href="#">facebook</a>
-                    <a href="#">youtube</a>
-                </div>
+
+                <ul class="social-icons">
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li> <a href="#">youtube</a></li>
+                </ul>
+
+
             </div>
-            <div class="col">
+            <div class="col col-33">
                 <h3>link utili</h3>
-                <ul>
-                    <li><a href="">PRIVACY POLICY</a></li>
-                    <li><a href="">COOKIE POLICY</a></li>
+                <ul class="link-utili">
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Cookie policy</a></li>
                 </ul>
 
             </div>
@@ -98,7 +105,23 @@
             <img id="modalImage" src="" alt="Modal Image">
         </div>
     </div>
+    <div id="mynav" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;
+        </a>
+<div class="overlay-content">
+        <nav class="nav-overlay">
+            <ul class="menu-overlay">
+                <li class="menu-item "><a href="./">Home</a></li>
+                <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
+                <li class="menu-item"><a href="artisti.html">Artisti</a></li>
+                <li class="menu-item active"><a href="galleria.html">Galleria</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    </div>
     <script src="js/main.js"></script>
+    <script src="js/galleria.js"></script>
 </body>
 
 </html>

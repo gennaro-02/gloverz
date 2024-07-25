@@ -140,7 +140,7 @@ header {
 
 .descrizione {
     color: #ffffff;
-    width: 600px;
+    max-width: 600px;
     margin-top: 20px;
 
 
@@ -202,6 +202,7 @@ header {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .row.inverse {
@@ -209,7 +210,20 @@ header {
 }
 
 .col {
-    padding: 50px;
+    padding: 20px;
+}
+
+.col-50{
+    width: 50%;
+
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-40 {
+    width: 40%;
 }
 
 #sezione-2 p,
@@ -247,7 +261,7 @@ header {
     text-align: center;
 }
 
-/*inizio sessione artisti*/
+/*inizio sezione artisti*/
 
 .s-artisti {
     padding: 120px 0 50px 0;
@@ -289,8 +303,12 @@ footer h3 {
 
 
 footer .col {
-    flex: 1;
+    
     padding: 20px;
+}
+
+.col-33 {
+    width: 33.33%;
 }
 
 footer .logo {
@@ -309,8 +327,22 @@ footer ul {
 
 .social-icons {
     display: flex;
-    gap: 20px;
+
 }
+ .link-utili a {
+    padding: 8px 0;
+    display: block; 
+    
+
+ }
+
+.social-icons a {
+    padding: 8px 0;
+    display: block;
+    margin-right: 20px;
+}
+
+
 
 footer .copyright {
     border-top: 1px solid #fff;
@@ -352,25 +384,27 @@ footer .copyright p {
 }
 
 .sezioneartistidue {
-    padding: 100px 0;
+    padding: 100px 20px;
     min-height: 600px;
 }
 
 .artistidue {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     gap: 20px
 }
 
 .artista {
     position: relative;
+    
 }
 
 .artista .image {
     height: 300px;
     width: 300px;
+    width: 100%;
 }
 
 .artista .image img {
@@ -523,16 +557,21 @@ footer .copyright p {
 
 .filtri {
     display: flex;
-    gap: 80px;
-    justify-content: center;
+    gap: 20px;
     align-items: center;
     padding-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    }
 
-}
 
 .filtri li {
     background-color: #000000;
     padding: 12px 20px;
+    width: 300px;
+    text-align: center;
+
 
 
 }
@@ -652,6 +691,79 @@ display: none;
 
 }
 
+/* inizio storia dei graffiti */
+
+#pagina-storia .cover {
+    background-color: #212121;
+    background-image: url(../img/storia/tunnel.jpg);
+    background-size:cover;
+    background-position: bottom center;
+    height: 600px;
+    color: #00D1FF;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+
+}
+
+#pagina-storia .w5 {
+   background-color: #212121;
+   color: #fff;
+   padding: 50px 0;
+
+}
+
+  #pagina-storia .cover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.w5 h2 {
+    color: #00D1FF;
+    font-size: 40px;
+
+}
+
+.graffiti-moviment h2 {
+    margin-bottom: 32px;
+}
+
+.graffiti-moviment p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+
+}
+
+.img-fluid {
+    max-width: 100%;
+    max-height: 600px;
+    margin: auto;
+    display: block;
+}
+
+
+.p-100{
+    padding: 100px 0;
+}
+
+.w-space {
+    min-height: 500px;
+}
+
+.w-space p {
+    margin-bottom: 30px;
+}
+
+
 /* responsive */
 
 @media (max-width:768px) {
@@ -662,4 +774,84 @@ display: none;
     .hamburger {
         display: block;
     }
+
+    .col-50, .col-33, .col-60, .col-40 {
+        width: 100%;
+    }
+
+    .titolo {
+        font-size: 60px;
+        margin-top: 50px;
+    }
+
+    .slogan {
+        font-size: 40px;
+    }
+
+    .freccia {
+       margin-left: -35px;
+    }
+.freccia img {
+    width:70px ;
+    height:70px ;
+}
+
+.titolo2{
+    font-size: 40px;
+}
+
+.volti {
+    grid-template-columns: 1fr;
+}
+
+.t-artisti {
+    font-size: 40px;
+}
+
+footer .logo {
+    text-align: left;
+}
+.social-icons {
+    display: block;
+}
+
+.social-icons a {
+    margin-right: 0;
+}
+
+.dondino {
+    display: none;
+}
+
+
+.sezioneartisti h1{
+font-size: 40px;
+}
+
+.artistidue {
+    grid-template-columns: 1fr;
+}
+
+.galleria {
+    grid-template-columns: 1fr;
+}
+
+#pagina-galleria .cover {
+    font-size: 40px;
+}
+
+
+.filtri li {
+    width: 100%;
+}
+
+#sezione-2::before {
+    background-repeat: no-repeat;
+
+}
+
+.cover h2 {
+    font-size: 40px;
+}
+
 }

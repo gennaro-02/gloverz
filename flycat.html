@@ -28,6 +28,9 @@
                         <li class="menu-item"><a href="galleria.html">Galleria</a></li>
                     </ul>
                 </nav>
+                <a href="javascript:void(0)" class="hamburger">
+                    <img src="img/uil_bars.png" onclick="openNav()" alt="">
+                </a>
             </div>
         </div>
 
@@ -36,11 +39,9 @@
     <main id="paginaartista">
         <section class="s-uno">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class=" col col-50 relative">
-                        <div class="busto">
-                            <img src="img/bustofly.png" alt="">
-                        </div>
+
                         <div class="busto-m flycat"></div>
                     </div>
                     <div class=" col col-50">
@@ -81,7 +82,7 @@
                     </div>
 
                     <div class=" col col-50">
-                        <img src="img/artisti/ofly.jpg" class="img-fluid" alt="">
+                        <img src="img/artisti/o-fly.png" class="img-fluid modalTrigger" alt="">
                     </div>
                 </div>
             </div>
@@ -111,7 +112,7 @@
                 <h3>link utili</h3>
                 <ul>
                     <li><a href="">Privacy policy</a></li>
-                    <li><a href="">Cookie plolicy</a></li>
+                    <li><a href="">Cookie policy</a></li>
                 </ul>
 
             </div>
@@ -122,6 +123,30 @@
         </div>
 
     </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+        </div>
+    </div>
+    <div id="mynav" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;
+        </a>
+        <div class="overlay-content">
+            <nav class="nav-overlay">
+                <ul class="menu-overlay">
+                    <li class="menu-item"><a href="./">Home</a></li>
+                    <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
+                    <li class="menu-item"><a href="artisti.html">Artisti</a></li>
+                    <li class="menu-item"><a href="galleria.html">Galleria</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 
 
 

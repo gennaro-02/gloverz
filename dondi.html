@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Loverz -Artisti | Dondi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="inner-header">
+                <div class="logo">
+                    <a href="./"><img src="img/logo.png" alt=""></a>
+                </div>
+                <nav class="menu-nav">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="./">Home</a></li>
+                        <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
+                        <li class="menu-item"><a href="artisti.html">Artisti</a></li>
+                        <li class="menu-item"><a href="galleria.html">Galleria</a></li>
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="hamburger">
+                    <img src="img/uil_bars.png" onclick="openNav()" alt="">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="paginaartista">
+        <section class="s-uno">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class=" col col-50 relative">
+
+                        <div class="busto-m dondi"></div>
+                    </div>
+                    <div class=" col col-50">
+                        <h1 class="artist-name">Dondi</h1>
+
+                        <p class="bio">Dondi, pseudonimo di Donald Joseph White, è stato uno dei writer più influenti e
+                            riconosciuti della scena dei graffiti di New York. Nato il 7 aprile 1961 a Brooklyn, Dondi
+                            inizia a dipingere graffiti nei primi anni '70. È particolarmente noto per i suoi pezzi sui
+                            vagoni della metropolitana di New York, che hanno contribuito a definire lo stile del
+                            writing di quell'epoca.</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="s-due">
+            <div class="container">
+                <div class="row">
+                    <div class=" col col-50 sfondo-nero relative">
+
+                        <div class="badge">
+                            <p>opere</p>
+                        </div>
+                        <h3 class="titolo-descrizione">
+                            Graffiti legend<br />
+                        </h3>
+                        <p>Dondi White è stato un artista di graffiti iconico, particolarmente noto per la serie
+                            "Children of the Grave" realizzata tra il 1978 e il 1980, che ha segnato il suo stile
+                            distintivo e influente nel mondo del writing. La sua abilità nel lettering e nell'uso del
+                            colore è evidente nei suoi "end to end burners" e nei "whole car pieces", opere che
+                            coprivano interi vagoni della metropolitana di New York. Dondi ha anche creato pezzi
+                            commemorativi, come tributi ad altri artisti, dimostrando la sua profonda influenza nella
+                            cultura urbana e graffiti.</p>
+
+                    </div>
+
+                    <div class=" col col-50">
+                        <img src="img/artisti/odondi.jpg" class="img-fluid modalTrigger" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+
+        <div class="row">
+
+            <div class="col col-33">
+                <div class="logo">
+                    <a href="./"><img src="img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col col-33">
+                <h3>social</h3>
+                <div class="social-icons">
+                    <a href="#">instagram</a>
+                    <a href="#">facebook</a>
+                    <a href="#">youtube</a>
+                </div>
+            </div>
+            <div class="col col-33">
+                <h3>link utili</h3>
+                <ul class="link-utili">
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Cookie policy</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="row copyright">
+            <p><small>© G-loverz 2024</small></p>
+        </div>
+
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+        </div>
+    </div>
+    <div id="mynav" class="overlay">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;
+        </a>
+        <div class="overlay-content">
+            <nav class="nav-overlay">
+                <ul class="menu-overlay">
+                    <li class="menu-item"><a href="./">Home</a></li>
+                    <li class="menu-item"><a href="storia.html">Storia dei graffiti</a></li>
+                    <li class="menu-item"><a href="artisti.html">Artisti</a></li>
+                    <li class="menu-item"><a href="galleria.html">Galleria</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

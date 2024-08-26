@@ -508,6 +508,19 @@ footer .copyright p {
 }
 
 
+.banksy{
+    background-image: url('../img/busto-banksy.png')
+}
+
+
+.dondi{
+    background-image: url('../img/busto-dondi.png')
+}
+
+
+.pichiavo{
+    background-image: url('../img/busto-pichiavo.png')
+}
 
 .busto img {
     width: 100%;
@@ -770,7 +783,7 @@ display: none;
 
 }
 
-#pagina-storia .w5 {
+#pagina-storia #w5 {
    background-color: #212121;
    color: #fff;
    padding: 50px 0;
@@ -787,7 +800,7 @@ display: none;
     z-index: -1;
 }
 
-.w5 h2 {
+#w5 h2 {
     color: #00D1FF;
     font-size: 40px;
 

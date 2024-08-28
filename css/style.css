@@ -166,7 +166,7 @@ header {
 
 @keyframes floating {
     from {
-        trannsform: translateY(0)
+        transform: translateY(0)
     }
 
     to {
@@ -383,7 +383,6 @@ footer .copyright p {
     position: absolute;
     bottom: 0;
     left: 5%;
-    height: ;
 
 
 }
@@ -491,7 +490,7 @@ footer .copyright p {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 auto
+    margin-bottom: 50px;
 }
 
 
@@ -510,6 +509,7 @@ footer .copyright p {
 
 .banksy{
     background-image: url('../img/busto-banksy.png')
+
 }
 
 

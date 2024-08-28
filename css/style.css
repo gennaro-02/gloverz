@@ -490,7 +490,7 @@ footer .copyright p {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 50px;
+   margin: 0 auto;
 }
 
 
